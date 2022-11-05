@@ -30,7 +30,7 @@
             />
           </div>
           <div class="information">
-            <span class="name">Jane Doe</span>
+            <span class="name" id="profileName">Jane Doe</span>
             <p>
               <img
                 src="src/icons/map-marker.png"
@@ -45,7 +45,7 @@
               Master of shadows and the Internet!
             </p>
             <p>
-              <a href="#">
+              <a href="#" onclick="changeProfileName(event)">
                 <img
                   src="src/icons/gear.png"
                   alt="gear icon"
@@ -72,12 +72,12 @@
         <div class="side_cards">
           <div class="other_info_colorHeader">
             <span class="other_info_header_text">
-              <span class="amount">2</span>
+              <span class="amount" id="connectRequestTotal">2</span>
               Connection Request
             </span>
           </div>
           <div class="side_card_content">
-            <div class="connect_user">
+            <div class="connect_user" id="userRow-1">
               <div class="user_info">
                 <img
                   src="src/images/todd-s.jpg"
@@ -91,15 +91,17 @@
                   src="src/icons/accept-circle.png"
                   alt="accept"
                   class="user_icons"
+                  onClick='acceptRequest("#userRow-1")'
                 />
                 <img
                   src="src/icons/close-circle.png"
                   alt="decline"
                   class="user_icons"
+                  onClick='denyRequest("#userRow-1")'
                 />
               </div>
             </div>
-            <div class="connect_user">
+            <div class="connect_user" id="userRow-2">
               <div class="user_info">
                 <img src="src/images/phil-s.jpg" alt="phil" class="user_pic" />
                 <p class="user_name">Phil</p>
@@ -109,11 +111,13 @@
                   src="src/icons/accept-circle.png"
                   alt="accept"
                   class="user_icons"
+                  onClick='acceptRequest("#userRow-2")'
                 />
                 <img
                   src="src/icons/close-circle.png"
                   alt="decline"
                   class="user_icons"
+                  onClick='denyRequest("#userRow-2")'
                 />
               </div>
             </div>
@@ -122,7 +126,8 @@
         <div class="side_cards">
           <div class="other_info_colorHeader">
             <span class="other_info_header_text">
-              <span class="amount">500</span> Your Connections
+              <span class="amount" id="yourConnectionsTotal">500</span> Your
+              Connections
             </span>
           </div>
           <div class="side_card_content">
