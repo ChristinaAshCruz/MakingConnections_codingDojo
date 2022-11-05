@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Profile Page</title>
+  </head>
+  <body>
+    <div id="navBar">
+      <span class="profile">Profile</span>
+      <div class="nav_links">
+        <a href="#" class="links">Home</a>
+        <a href="#" class="my_profile">My Profile</a>
+        <a href="#" class="links">Find Connections</a>
+      </div>
+      <button class="sign_out">Sign Out</button>
+    </div>
+    <div class="container">
+      <!-- left column -->
+      <div id="col_left">
+        <div id="main_bio">
+          <div class="main_color_block">
+            <img
+              src="src/images/anne-s.jpg"
+              alt="profile pic"
+              class="profile_pic"
+            />
+          </div>
+          <div class="information">
+            <span class="name">Jane Doe</span>
+            <p>
+              <img
+                src="src/icons/map-marker.png"
+                alt="map marker icon"
+                class="icon_small"
+              />
+              Seattle
+            </p>
+            <p>
+              Developer | Engineer | Problem Solver
+              <br />
+              Master of shadows and the Internet!
+            </p>
+            <p>
+              <a href="#">
+                <img
+                  src="src/icons/gear.png"
+                  alt="gear icon"
+                  class="icon_small"
+                />edit profile
+              </a>
+            </p>
+          </div>
+        </div>
+        <div id="education">
+          <div class="other_info_colorHeader">
+            <span class="other_info_header_text"> Education </span>
+          </div>
+          <div class="side_card_content">
+            <div class="education_card_content">
+              <span class="edu_listing1"> Coding Dojo </span>
+              <p class="dates">Dec 2019 - Mar 2020</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- right column -->
+      <div id="col_right">
+        <div class="side_cards">
+          <div class="other_info_colorHeader">
+            <span class="other_info_header_text">
+              <span class="amount">2</span>
+              Connection Request
+            </span>
+          </div>
+          <div class="side_card_content">
+            <div class="connect_user">
+              <div class="user_info">
+                <img
+                  src="src/images/todd-s.jpg"
+                  alt="todd-s"
+                  class="user_pic"
+                />
+                <p class="user_name">Todd E.</p>
+              </div>
+              <div class="connect_request_icons">
+                <img
+                  src="src/icons/accept-circle.png"
+                  alt="accept"
+                  class="user_icons"
+                />
+                <img
+                  src="src/icons/close-circle.png"
+                  alt="decline"
+                  class="user_icons"
+                />
+              </div>
+            </div>
+            <div class="connect_user">
+              <div class="user_info">
+                <img src="src/images/phil-s.jpg" alt="phil" class="user_pic" />
+                <p class="user_name">Phil</p>
+              </div>
+              <div class="connect_request_icons">
+                <img
+                  src="src/icons/accept-circle.png"
+                  alt="accept"
+                  class="user_icons"
+                />
+                <img
+                  src="src/icons/close-circle.png"
+                  alt="decline"
+                  class="user_icons"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="side_cards">
+          <div class="other_info_colorHeader">
+            <span class="other_info_header_text">
+              <span class="amount">500</span> Your Connections
+            </span>
+          </div>
+          <div class="side_card_content">
+            <div class="connect_user">
+              <div class="user_info">
+                <img
+                  src="src/images/todd-s.jpg"
+                  alt="todd-s"
+                  class="user_pic"
+                />
+                <p class="user_name">Todd E.</p>
+              </div>
+            </div>
+            <div class="connect_user">
+              <div class="user_info">
+                <img
+                  src="src/images/anne-s.jpg"
+                  alt="anne-s"
+                  class="user_pic"
+                />
+                <p class="user_name">Anne S.</p>
+              </div>
+            </div>
+            <div class="connect_user">
+              <div class="user_info">
+                <img
+                  src="src/images/alayne-s.jpg"
+                  alt="anne-s"
+                  class="user_pic"
+                />
+                <p class="user_name">Alayne T.</p>
+              </div>
+            </div>
+            <div class="connect_user">
+              <div class="user_info">
+                <img
+                  src="src/images/arry-s.jpg"
+                  alt="anne-s"
+                  class="user_pic"
+                />
+                <p class="user_name">Arry Y.</p>
+              </div>
+            </div>
+          </div>
+          <div class="side_card_content">
+            <a href="#">
+              <span class="connect_user"> View More </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
